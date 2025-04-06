@@ -1,0 +1,23 @@
+{
+    "meny": [
+      {
+        "name" : "Matcha mango",
+        "description" : "En drink som passer perfekt til sommeren, med en blanding av matcha og mango.",
+        "price" : "90kr",
+        "image" : "img/matchamango.png"
+      },
+      {
+        "name" : "Roses",
+        "description" : "En smak av bær og mynte med en garnityr av roseblader, perfekt for en varm sommerdag.",
+        "price" : "80kr",
+        "image" : "img/roses.png"
+      },
+      {
+        "name" : "Dandelion",
+        "description" : "En sommer med solens farger, med en blanding av fersken og mango.",
+        "price" : "95kr",
+        "image" : "img/dandelion.png"
+      }
+    ]
+}
+  
