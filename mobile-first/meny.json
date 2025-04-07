@@ -17,6 +17,24 @@
         "description" : "En sommer med solens farger, med en blanding av fersken og mango.",
         "price" : "95kr",
         "image" : "img/dandelion.png"
+      },
+      {
+        "name": "Azure",
+        "description": "Pannekaker toppet med ekte blåbær og sjokolade.",
+        "price": "120kr",
+        "image": "img/pancake.png"
+      },
+      {
+        "name": "Sienna",
+        "description": "Belgian Waffles toppet med ekte bær og lønnesirup.",
+        "price": "125kr",
+        "image": "img/waffle.png"
+      },
+      {
+        "name": "Sandwich",
+        "description": "En sandwich som er perfekt for en lett lunsj.",
+        "price": "85kr",
+        "image": "img/sandwich.png"
       }
     ]
 }
