@@ -8,14 +8,14 @@ function loadMenu() {
     fetch('meny.json')
         .then(response => response.json())
         .then(data => {
-            const menuList = document.getElementById('menu-list');  // Fixed typo here
+            const menuList = document.getElementById('menu-list');
             data.meny.forEach((item, index) => {
                 let li = document.createElement('li');
                 li.innerHTML = `
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
                     <p><strong>Pris:</strong> ${item.price}</p>
-                    ${item.image ? `<img class="image" src="${item.image}" alt="${item.name}" />` : ''} <!-- Added 'image' class here -->
+                    ${item.image ? `<img class="image" src="${item.image}" alt="${item.name}" />` : ''}
                     <button onclick="addToOrder(${index}, '${item.name}', '${item.price}')">Legg til</button>
                     <hr>
                 `;
@@ -26,21 +26,27 @@ function loadMenu() {
 }
 
 function addToOrder(index, name, price) {
-    order.push({ index, name, price });
+    const priceValue = parseFloat(price.replace('kr', '').trim());
+    order.push({ index, name, price: priceValue });
     updateOrderList();
 }
 
 function updateOrderList() {
     const orderList = document.getElementById('order-list');
     orderList.innerHTML = "";
+    let totalPrice = 0; 
     order.forEach((item, i) => {
         let li = document.createElement('li');
         li.innerHTML = `
-            ${item.name} - ${item.price} 
+            ${item.name} - ${item.price}kr
             <button onclick="removeFromOrder(${i})">Fjern</button>
         `;
         orderList.appendChild(li);
+        totalPrice += item.price;  
     });
+
+    const totalPriceElement = document.getElementById('total-price');
+    totalPriceElement.innerHTML = `Total Pris: ${totalPrice.toFixed(2)}kr`; // Show total price rounded to 2 decimal places
 }
 
 function removeFromOrder(index) {
