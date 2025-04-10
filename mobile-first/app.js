@@ -46,7 +46,7 @@ function updateOrderList() {
     });
 
     const totalPriceElement = document.getElementById('total-price');
-    totalPriceElement.innerHTML = `Total Pris: ${totalPrice.toFixed(2)}kr`; // Show total price rounded to 2 decimal places
+    totalPriceElement.innerHTML = `Total Pris: ${totalPrice.toFixed(2)}kr`;
 }
 
 function removeFromOrder(index) {
