@@ -1,0 +1,41 @@
+{
+    "meny": [
+      {
+        "name" : "Matcha mango",
+        "description" : "En drink som passer perfekt til sommeren, med en blanding av matcha og mango.",
+        "price" : "85kr",
+        "image" : "img/matchamango.png"
+      },
+      {
+        "name" : "Roses",
+        "description" : "En smak av bær og mynte med en garnityr av roseblader, perfekt for en varm sommerdag.",
+        "price" : "75kr",
+        "image" : "img/roses.png"
+      },
+      {
+        "name" : "Dandelion",
+        "description" : "En sommer med solens farger, med en blanding av fersken og mango.",
+        "price" : "90kr",
+        "image" : "img/dandelion.png"
+      },
+      {
+        "name": "Azure",
+        "description": "Pannekaker toppet med ekte blåbær og sjokolade.",
+        "price": "110kr",
+        "image": "img/pancake.png"
+      },
+      {
+        "name": "Sienna",
+        "description": "Belgian Waffles toppet med ekte bær og lønnesirup.",
+        "price": "115kr",
+        "image": "img/waffle.png"
+      },
+      {
+        "name": "Club sandwich",
+        "description": "En sandwich som er perfekt for en lett lunsj.",
+        "price": "75kr",
+        "image": "img/sandwich.png"
+      }
+    ]
+}
+  
